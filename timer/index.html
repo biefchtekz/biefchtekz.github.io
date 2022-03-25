@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <div class="wrap">
+  <div class="container__section section_clock">
+      <p class="current_date" id="currentDate"></p>
+      <p class="current_date current_time" id="currentTime"></p>
+  </div>
+  <div class="container__section section_stopwatch">
+      <div class="stopwatch_box stopwatch-display">
+          <p id="stopWatch">00:00:00:000</p>
+          <div class="stopwatch_buttons">
+              <button class="stopwatch_button" onclick="stopWatchStart()">Start</button>
+              <button class="stopwatch_button" onclick="stopWatchLoop()">Loop</button>
+              <button class="stopwatch_button" onclick="stopWatchStop()">Stop</button>
+              <button class="stopwatch_button" onclick="stopWatchReset()">Reset</button>
+          </div>
+      </div>
+      <div class="stopwatch_box stopwatch-loop-display" id="stopWatchLoopDisplay">
+
+      </div>
+  </div>
+  <div class="container__section section_timer">
+      <div class="timer_alert" id="timerAlert" onclick="alertStop()">Time's up!!!</div>
+      <div class="stopwatch_box timer_box timer_settings">
+          <p id="timerValue" class="timer-value">5</p>
+          <p style="font-size: 20px; line-height: 60px;">MINUTES</p>
+          <div class="timer_buttons">
+              <button class="timer_button" onclick="increaseTimerValue()">+</button>
+              <button class="timer_button" onclick="decreaseTimerValue()">-</button>
+          </div>
+      </div>
+      <div class="stopwatch_box timer_box timer_display">
+          <p id="currentTimerValue" class="timer-value">00:00</p>
+          <div class="timer_buttons">
+              <button class="stopwatch_button" onclick="timerStart()" id="timerStartButton">Start</button>
+              <button class="stopwatch_button" onclick="timerStop()">Stop</button>
+              <button class="stopwatch_button" onclick="timerReset()">Reset</button>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
