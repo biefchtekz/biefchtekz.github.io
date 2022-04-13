@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+    font-size: 18px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+.wrap{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.in-wrap{
+    width: 840px;
+    height: 100px;
+    margin: 70px 20px;
+}
+.heading{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.user-form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.user-form button{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(2, 182, 2);
+    padding: 10px;
+    color: rgb(2, 182, 2);
+    background: white;
+    transition: .2s background, .2s color;
+}
+.user-form button:hover{
+    transition: .2s background, .2s color;
+    background: rgb(2, 182, 2);
+    color: white;
+}
+.list-heading{
+    height: 50px;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+.list_num{
+    text-align: center;
+    width: 40px;
+}
+.list_login{
+    text-align: center;
+    width: 150px;
+}
+.list_edit, .list_delete{
+    text-align: center;
+    width: 100px;
+}
+.list_email, .list_password{
+    width: 225px;
+    text-align: center;
+}
+.user_data{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.setting_button{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.edit-button{
+    background: rgba(255, 174, 0, 0.8);
+}
+.delete-button{
+    background: rgba(255, 0, 0, 0.8);
+}
